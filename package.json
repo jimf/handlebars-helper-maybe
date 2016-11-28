@@ -1,0 +1,42 @@
+{
+  "name": "handlebars-helper-maybe",
+  "version": "1.0.0",
+  "description": "Handlebars helpers for rendering optional values",
+  "main": "index.js",
+  "files": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover test.js",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "tape test.js",
+    "validate": "npm run lint && npm test && npm run coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimf/handlebars-helper-maybe"
+  },
+  "keywords": [
+    "handlebars",
+    "helper",
+    "maybe",
+    "optional"
+  ],
+  "author": "Jim Fitzpatrick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimf/handlebars-helper-maybe/issues"
+  },
+  "homepage": "https://github.com/jimf/handlebars-helper-maybe",
+  "devDependencies": {
+    "coveralls": "latest",
+    "data.maybe": "^1.2.2",
+    "fantasy-options": "0.0.1",
+    "handlebars": "latest",
+    "istanbul": "latest",
+    "ramda-fantasy": "^0.7.0",
+    "sanctuary": "^0.11.1",
+    "standard": "latest",
+    "tape": "latest"
+  }
+}
